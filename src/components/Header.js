@@ -32,10 +32,12 @@ const Header = () => {
             </Link>
           ))}
         </nav>
-        <button className="inline-flex items-center bg-indigo-500 text-white border-0 py-1 px-3 space-x-1 focus:outline-none hover:bg-indigo-600 rounded text-base mt-4 md:mt-0">
-          <Link to="/cart"> Cart </Link>
-          <BsCart />
-        </button>
+        <Link to="/cart">
+          <button className="inline-flex items-center bg-indigo-500 text-white border-0 py-1 px-3 space-x-1 focus:outline-none hover:bg-indigo-600 rounded text-base mt-4 md:mt-0">
+            Cart
+            <BsCart />
+          </button>
+        </Link>
       </div>
     </header>
   );
